@@ -1,0 +1,25 @@
+graph TD
+    A["TodoApp"]
+    A --> B["Controllers/"]
+    A --> C["Models/"]
+    A --> D["DTOs/"]
+    A --> E["Services/"]
+    A --> F["Data/"]
+    A --> G["Migrations/"]
+    
+    B --> B1["UserController"]
+    B --> B2["TaskController"]
+    B --> B3["CategoryController"]
+    B --> B4["StateController"]
+    
+    C --> C1["User"]
+    C --> C2["Task"]
+    C --> C3["Category"]
+    C --> C4["State"]
+    
+    D --> D1["UserDTO"]
+    D --> D2["TaskDTO"]
+    D --> D3["CategoryDTO"]
+    D --> D4["StateDTO"]
+    
+    F --> F1["ApplicationDbContext"] 

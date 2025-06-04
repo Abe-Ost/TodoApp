@@ -1,0 +1,34 @@
+erDiagram
+    User ||--o{ Task : "crea"
+    Task }|--|| Category : "pertenece"
+    Task }|--|| State : "tiene"
+    
+    User {
+        int Id
+        string Username
+        string Password
+        string Email
+        string Role
+    }
+    
+    Task {
+        int Id
+        string Title
+        string Description
+        DateTime CreatedDate
+        int UserId
+        int CategoryId
+        int StateId
+    }
+    
+    Category {
+        int Id
+        string Name
+        string Description
+    }
+    
+    State {
+        int Id
+        string Name
+        string Description
+    } 
